@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gregs List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <section class="container-fluid">
+    <header class="row">
+      <div class="col">
+        <h1>Welcome to Gregs list</h1>
+      </div>
+    </header>
+    <section>
+      <form onsubmit="app.controllers.carControler.addCar(event)">
+        <input type="text" name="title" placeholder=" title">
+        <input type="text" name="description" placeholder="description">
+        <input type="number" name="price" placeholder="price">
+        <input type="url" name="img" placeholder="#">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <main id="available-cars" class="row">
+      <!-- <div class="card col-3">
+        <img class="card-img-top" src="/images/pathToYourImage.png" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">Car title</h4>
+          <p class="card-text">
+            car description -- price
+          </p>
+          <a href="#!" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div> -->
+
+    </main>
+  </section>
+
+
+  <script type="module" src="app/main.js"></script>
+</body>
+
+</html>

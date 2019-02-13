@@ -1,7 +1,6 @@
-let id = 1
+let id = 0
 
-
-export default class Car {
+export default class House {
   constructor(data) {
     this.id = id;
     this.price = data.price;

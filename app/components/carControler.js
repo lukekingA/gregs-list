@@ -1,6 +1,7 @@
 import CarService from "./carservice.js";
 
-//Public
+
+//Private
 
 
 let _cs = new CarService()
@@ -15,9 +16,10 @@ function draw() {
   document.getElementById('available-cars').innerHTML = template
 }
 
-//Private
+//Public
 export default class CarControler {
   constructor() {
+    _cs.addSubscriber('cars', draw)
     draw()
   }
 
@@ -33,9 +35,10 @@ export default class CarControler {
     }
     _cs.addCar(rawData)
     form.reset()
-    draw()
+
   }
-  deleteCar() {
+  deleteCar(id) {
+    _cs.deleteCar(id)
 
   }
 }
